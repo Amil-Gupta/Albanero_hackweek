@@ -11,7 +11,7 @@ int main()
         s[i]="";
     }
     printf("Enter string\n");
-    getchar();
+    getchar(); //as the extra character for newline was causing input problems
     scanf("%[^\n]s",&s);
     for(i=0;i<n;i++)
     {
