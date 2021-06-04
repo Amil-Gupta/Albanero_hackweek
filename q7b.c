@@ -2,10 +2,10 @@
 
 int main()
 {
-    int n,K,i,j,lpos0=-1,lmax=0,lcurr=0,count0;
+    int n,K,i,j,lmax=0,lcurr=0,count0;
     printf("Enter no. of elements\n");
     scanf("%d",&n);
-    int a[n],a1[n],pos0[n];
+    int a[n];
     printf("Enter array elements\n");
     for(i=0;i<n;i++)
     {
