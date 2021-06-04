@@ -25,10 +25,11 @@ int main()
         a[i]=a[min];
         a[min]=temp;
     }
-    for(i=0;i<n;i++)
+    printf("[ ");
+    for(i=0;i<n-1;i++)
     {
-        printf("%d ",a[i]);
+        printf("%d, ",a[i]);
     }
-    printf("\n");
+    printf("%d ]\n",a[i]);
     return 0;
 }
