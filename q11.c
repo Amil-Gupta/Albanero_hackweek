@@ -10,6 +10,11 @@ int main()
     i=0;
     printf("Enter word length\n");
     scanf("%d",&wl);//as pattern.length=words[i].length, thus all words are of the same length, which is the pattern's length
+    if(wl<1 || wl>20)
+    {
+        printf("Invalid word length\n");
+        return 0;
+    }
 
     while(choice && i<50)
     {
