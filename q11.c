@@ -18,7 +18,7 @@ int main()
         if(choice)
         {
             n++;
-            words[i]=(char*)malloc(sizeof(char)*20);
+            words[i]=(char*)malloc(sizeof(char)*wl);
             printf("Enter word\n");
             scanf("%s",words[i]);
             getchar();
