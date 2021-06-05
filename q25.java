@@ -16,7 +16,6 @@ class q25
             {
                 if( Character.toLowerCase(s.charAt(i)) == Character.toLowerCase(s.charAt(j)) )
                 {
-                    System.out.println(Character.toLowerCase(s.charAt(i))+" "+Character.toLowerCase(s.charAt(j)) +" "+ i);
                     isogram=false;
                     break;
                 }
