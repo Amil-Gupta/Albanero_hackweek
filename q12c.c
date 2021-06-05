@@ -21,7 +21,7 @@ int main()
     {
         if(i==25)
         {
-            while(i>0 && l>0)
+            while(i>=0 && l>0)
             {
                 if(count[i]>0)
                 {
@@ -31,10 +31,11 @@ int main()
                 }
                 i--;
             }
+            i=0;
         }
-        else
+        else if(i==0)
         {
-            while(i<25 && l>0)
+            while(i<26 && l>0)
             {
                 if(count[i]>0)
                 {
@@ -44,9 +45,10 @@ int main()
                 }
                 i++;
             }
+            i=25;
         }
     }
-    for(i=0;i<=l1;i++)
+    for(i=0;i<l1;i++)
     {
         printf("%c",s1[i]);
     }
