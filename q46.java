@@ -6,7 +6,7 @@ class q46
     {
         Scanner sc=new Scanner(System.in);
         String s;
-        int l,i;
+        int l,i,spacecount=0;
         boolean correct=true;
         System.out.println("Enter a string");
         s=sc.nextLine();
@@ -19,10 +19,14 @@ class q46
         {
             for(i=0;i<l-1 && correct;i++)
             {
-                if( s.charAt(i) == ' ' && s.charAt(i+1) == ' ' )
+                if( s.charAt(i) == ' ' )
                 {
-                    correct=false;
-                    break;
+                    spacecount++;
+                    if(s.charAt(i+1) == ' ')
+                    {
+                        correct=false;
+                        break;
+                    }
                 }
                 else if( ( Character.toUpperCase(s.charAt(i)) == s.charAt(i) ) && ( Character.toUpperCase(s.charAt(i+1)) == s.charAt(i+1) ) )
                 {
@@ -30,11 +34,14 @@ class q46
                     break;
                 }
             }
+            if(spacecount==0) //the only way to check for the condition "there must be spaces between words" when we cannot identify words is to 
+                            //ensure that there are spaces in the string, assuming that the string is multi-word
+                            //otherwise,this condition is meaningless
+            {
+                correct=false;
+            }
         }
         System.out.println(correct);
         sc.close();
     }
 }
-
-//as we cannot identify words, the condition that "there should be spaces between words" does not need to be checked
-//(it is also not specified that the string is multi-word, thus a single word without spaces is indistinguishable from multiple words without spaces)
