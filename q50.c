@@ -23,10 +23,18 @@ int main()
             printf("%d ",a[i][j]);
             left--;
         }
+        if(left==0)
+        {
+            break;
+        }
         for(j=i+1;j<m-i;j++)
         {
             printf("%d ",a[j][n-i-1]);
             left--;
+        }
+        if(left==0)
+        {
+            break;
         }
         for(j=n-i-2;j>=i;j--)
         {
