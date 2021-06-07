@@ -23,7 +23,7 @@ class q38b
         {
             cost[i]=sc.nextInt();
         }
-        System.out.println(minimum_full_recurse(-1,cost));
+        System.out.println(minimum_full_recurse(-1,cost)); //start from just outside the staircase, so we can choose to begin from either the 0th or 1st position
         sc.close();
     }
 }
