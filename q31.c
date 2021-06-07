@@ -16,7 +16,7 @@ int main()
         scanf("%d",&ne[i]);
         if(ne[i]>0)
         {
-            a[i]=(double*)malloc( sizeof(double) * ne[i] ); //the first element will store the size of the array
+            a[i]=(double*)malloc( sizeof(double) * ne[i] );
             printf("Enter array elements\n");
             for(j=0;j<ne[i];j++)
             {
